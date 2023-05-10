@@ -1,0 +1,314 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    color: #000000;
+    animation: transitionIn 0.7s;
+}
+
+@keyframes transitionIn
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TOP PAGE */
+
+nav
+{
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    position: sticky;
+    top: 0;
+}
+
+nav ul
+{
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    float: right;
+}
+
+nav ul li
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    display: block;
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+nav ul li a:hover,
+nav ul li a.active
+{
+    background: #800020;
+}
+
+nav img
+{
+    height: 100%;
+    width: 4%;
+    padding-left: 1%;
+}
+
+
+/* CENTER PAGE */
+
+.guidesigner
+{
+    padding: 50px;
+    background: #800000;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(#ffc0cb -50%, #800000 100%);
+}
+
+.guidesign
+{
+    padding: 50px;
+    background: #800000;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+
+.guidesign h1
+{
+    font-size: 30px;
+    font-family: 'Kanit', cursive;
+    text-decoration: underline;
+}
+
+.guidesign p
+{
+    font-family: 'Kanit', cursive;
+    font-size: 20px;
+}
+
+.guidesigner .introtop
+{
+    font-size: 50px;
+    text-decoration: none;
+    font-family: 'Kanit', cursive;
+    color: #800000;
+}
+
+.gtitle h1
+{
+    width: 100%;
+    height: 15vh;
+    background: #800000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.container
+{
+    width: 100%;
+    height: 70vh;
+    background: #800000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: #ffffff;
+}
+
+.swiper
+{
+    width: 100%;
+    height: fit-content;
+    border-radius: 8%;
+}
+
+.swiper-slide img
+{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next
+{
+    color: #ffffff;
+}
+
+.swiper .swiper-pagination-bullet-active
+{
+    background: #ffffff;
+}
+
+.text-box
+{
+    padding-left: 3%;
+}
+
+.text-box h2
+{
+    font-size: 300%;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+
+.text-box p
+{
+    font-size: 130%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+}
+
+.text-box2
+{
+    padding-right: 3%;
+    padding-left: 2%;
+    text-align: right;
+    font-weight: bolder;
+}
+
+.text-box2 h2
+{
+    font-size: 300%;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+
+.text-box2 p
+{
+    font-size: 130%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+}
+
+.outro
+{
+    height: 200px;
+    width: 400px;
+}
+
+.outro h5
+{
+    color: #800020;
+    font-family: 'Kanit', cursive;
+}
+
+.final
+{
+    background: #800000;
+}
+
+
+/* FOOTER */
+
+.footing
+{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.footer
+{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #800020;
+    padding: 70px 0;
+}
+
+.footer-col
+{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4
+{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover
+{
+    color: #ffffff;
+    padding-left: 8px;
+}
